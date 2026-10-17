@@ -1,0 +1,16 @@
+# Build output (BUILD_ROOT defaults to .build/local)
+.build/
+DerivedData/
+*.xcresult
+
+# Xcode per-user state
+xcuserdata/
+*.xcuserstate
+
+# Local signing configuration (copy Config/Local.xcconfig.example)
+Config/Local.xcconfig
+
+# Review runtime artifacts, never committed
+.review/
+
+.DS_Store

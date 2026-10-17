@@ -1,0 +1,21 @@
+// Shared build settings for every target and configuration.
+//
+// To run on a device, copy Local.xcconfig.example to Local.xcconfig (git-ignored),
+// set DEVELOPMENT_TEAM and, if needed, your own BUNDLE_ID_PREFIX.
+
+BUNDLE_ID_PREFIX = com.example.vocabwidget
+
+// Single source of truth for the App Group. Entitlements use $(APP_GROUP_ID) and both
+// Info.plist files expose it to code under the AppGroupID key.
+APP_GROUP_ID = group.$(BUNDLE_ID_PREFIX)
+
+MARKETING_VERSION = 1.0
+CURRENT_PROJECT_VERSION = 1
+
+IPHONEOS_DEPLOYMENT_TARGET = 17.0
+TARGETED_DEVICE_FAMILY = 1
+SWIFT_VERSION = 6.0
+CODE_SIGN_STYLE = Automatic
+DEVELOPMENT_TEAM =
+
+#include? "Local.xcconfig"
